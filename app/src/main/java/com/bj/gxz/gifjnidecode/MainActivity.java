@@ -10,10 +10,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.io.File;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
     private GifJni gifJni;
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Android源码中的，有些gif解码有些问题
     public void ndkGif(View view) {
-        File file = new File(Environment.getExternalStorageDirectory(), "demo.gif");
+        File file = new File(Environment.getExternalStorageDirectory(), "demo2.gif");
         gifJni = new GifJni(file.getAbsolutePath());
         int width = gifJni.getWidth();
         int height = gifJni.getHeight();
