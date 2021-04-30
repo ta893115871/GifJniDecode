@@ -3,7 +3,7 @@ package com.bj.gxz.gifjnidecode;
 import android.graphics.Bitmap;
 
 /**
- * Created by guxiuzhong@baidu.com on 2020/11/24.
+ * Created by guxiuzhong on 2020/11/24.
  */
 public class GifJni {
 
